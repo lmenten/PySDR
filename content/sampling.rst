@@ -72,8 +72,7 @@ If we don't sample fast enough we get something called aliasing, which we will l
 *************************
 Quadrature Sampling
 *************************
-
-The term "quadrature" has many meanings, but in the context of DSP and SDR it refers to two waves that are 90 degrees out of phase.  Why 90 degrees out of phase?  Consider how two waves that are 180 degrees out of phase are essentially the same wave with one multiplied by -1. By being 90 degrees out of phase they become orthogonal, and there's a lot of cool stuff you can do with orthogonal functions.  For the sake of simplicity, we use sine and cosine as our two sine waves that are 90 degrees out of phase.
+If two sine waves have the same frequency but different phases, then when the sine waves are added together the result is another sine wave with the same frequency but a different amplitude and phase.  When the two waves are perfectly in phase with each other, their signals augment each other.  When the two waves are 90 degrees out of phase, they are called "in quadrature."  What is special about 90 degrees out of phase?  Consider how two waves that are 180 degrees out of phase are essentially the same wave with one multiplied by -1. By being 90 degrees out of phase they become orthogonal, and there's a lot of cool stuff you can do with orthogonal functions.  For the sake of simplicity, we use sine and cosine as our two sine waves that are 90 degrees out of phase.
 
 Next let's assign variables to represent the **amplitude** of the sine and cosine.  We will use :math:`I` for the cos() and :math:`Q` for the sin():
 
